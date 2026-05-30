@@ -1,12 +1,12 @@
-import frameImageUrl from '../assets/images/frame.png';
+import frameImageUrl from '../assets/images/og.png';
 
 const CANVAS_WIDTH = 1200;
 const CANVAS_HEIGHT = 1800;
 const PHOTO_AREA = {
-  x: 8 / 519,
-  y: 8 / 778,
-  width: 503 / 519,
-  height: 692 / 778,
+  x: 14 / 519,
+  y: 76 / 778,
+  width: 490 / 519,
+  height: 624 / 778,
 };
 
 function loadImage(src) {
