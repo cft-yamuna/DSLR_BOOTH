@@ -9,8 +9,8 @@ import captureButton from '../assets/images/capture.png';
 
 const videoConstraints = {
   facingMode: 'user',
-  width: { ideal: 1920 },
-  height: { ideal: 1080 },
+  width: { ideal: 3840 },
+  height: { ideal: 2160 },
 };
 
 export default function CameraPage() {
@@ -129,9 +129,13 @@ export default function CameraPage() {
               <Webcam
                 ref={webcamRef}
                 audio={false}
+                forceScreenshotSourceSize
+                imageSmoothing
                 mirrored
-                screenshotFormat="image/jpeg"
+                screenshotFormat="image/png"
                 screenshotQuality={1}
+                minScreenshotWidth={1920}
+                minScreenshotHeight={1080}
                 videoConstraints={videoConstraints}
                 onUserMedia={() => setCameraReady(true)}
                 onUserMediaError={handleUserMediaError}
