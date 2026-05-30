@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1800" width="1200" height="1800">
+  <defs>
+    <radialGradient id="hotPink" cx="12%" cy="5%" r="55%">
+      <stop offset="0" stop-color="#ff1d6f"/>
+      <stop offset="0.42" stop-color="#9b1a78"/>
+      <stop offset="1" stop-color="#020205" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cyan" cx="55%" cy="0%" r="45%">
+      <stop offset="0" stop-color="#20c8ff"/>
+      <stop offset="0.36" stop-color="#185bd8"/>
+      <stop offset="1" stop-color="#020205" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violet" cx="105%" cy="31%" r="65%">
+      <stop offset="0" stop-color="#fa1f7d"/>
+      <stop offset="0.35" stop-color="#6a28e5"/>
+      <stop offset="1" stop-color="#020205" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="72%" cy="92%" r="58%">
+      <stop offset="0" stop-color="#1649f5"/>
+      <stop offset="0.38" stop-color="#16108f"/>
+      <stop offset="1" stop-color="#020205" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#11030c"/>
+      <stop offset="0.48" stop-color="#030308"/>
+      <stop offset="1" stop-color="#07020b"/>
+    </linearGradient>
+    <filter id="softNoise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="6"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.16"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1200" height="1800" fill="url(#base)"/>
+  <rect width="1200" height="1800" fill="url(#hotPink)"/>
+  <rect width="1200" height="1800" fill="url(#cyan)"/>
+  <rect width="1200" height="1800" fill="url(#violet)"/>
+  <rect width="1200" height="1800" fill="url(#blueGlow)"/>
+  <rect width="1200" height="1800" filter="url(#softNoise)" opacity="0.34"/>
+  <path d="M0 910 C220 760 448 825 642 938 C850 1058 1006 1035 1200 932 L1200 1800 L0 1800 Z" fill="#010104" opacity="0.54"/>
+  <path d="M0 1565 C232 1476 406 1522 594 1601 C808 1691 991 1662 1200 1548 L1200 1800 L0 1800 Z" fill="#000000" opacity="0.72"/>
+  <rect x="82" y="1528" width="1036" height="184" rx="44" fill="#050509" opacity="0.42"/>
+  <text x="600" y="1634" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" letter-spacing="10" fill="#ffffff" opacity="0.9">PHOTO BOOTH</text>
+  <text x="600" y="1688" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="7" fill="#a9d9ff" opacity="0.78">4 X 6 PRINT</text>
+</svg>
